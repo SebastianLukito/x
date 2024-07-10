@@ -312,3 +312,40 @@ body.single-toggle .drop:nth-child(10) {
 .photo-wrapper.fly4 {
     animation: fly4 10s linear infinite;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .love-letter {
+        width: 80%;
+        font-size: 18px;
+        padding: 15px;
+    }
+    .photo-wrapper {
+        top: 60%;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .love-letter {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .photo-wrapper {
+        top: 70%;
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .love-letter {
+        width: 95%;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .photo-wrapper {
+        top: 80%;
+        width: 100px;
+    }
+}
