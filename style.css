@@ -326,6 +326,8 @@ body.single-toggle .drop:nth-child(10) {
     border-radius: 30px;
     backdrop-filter: blur(10px);
     z-index: 5;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #play-pause {
