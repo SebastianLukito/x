@@ -183,7 +183,8 @@ body.single-toggle .drop:nth-child(10) {
     width: 80%;
     max-height: 80%;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Special Elite', cursive;
     font-size: 20px;
     white-space: pre-wrap;
     text-align: left;
@@ -311,4 +312,42 @@ body.single-toggle .drop:nth-child(10) {
 
 .photo-wrapper.fly4 {
     animation: fly4 10s linear infinite;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.6); /* Background lebih gelap untuk kontras */
+    padding: 10px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    z-index: 5;
+}
+
+#play-pause {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: url('play-icon.png') no-repeat center center / cover;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#play-pause.playing {
+    background: url('pause-icon.png') no-repeat center center / cover;
+}
+
+#song-title {
+    font-family: 'Special Elite', cursive;
+    color: white;
+    font-size: 16px;
+    line-height: 1.2
+}
+
+.music-player audio {
+    display: none;
 }

@@ -68,3 +68,17 @@ setTimeout(function() {
     $('.rain.back-row').fadeIn(2000); // Animasi hujan mulai muncul setelah beberapa waktu
     typeWriter(); // Mulai efek mengetik
 }, 2000); // Mulai efek mengetik setelah 2 detik
+
+// Music player controls
+const playPauseButton = document.getElementById("play-pause");
+const backgroundMusic = document.getElementById("background-music");
+
+playPauseButton.addEventListener("click", function() {
+    if (backgroundMusic.paused) {
+        backgroundMusic.play();
+        playPauseButton.classList.add("playing");
+    } else {
+        backgroundMusic.pause();
+        playPauseButton.classList.remove("playing");
+    }
+});
